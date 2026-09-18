@@ -1,7 +1,5 @@
-# Compiled Java class files
+# Java compiled files
 *.class
-bin/
-out/
 
 # IntelliJ IDEA
 .idea/
@@ -9,6 +7,10 @@ out/
 
 # VS Code
 .vscode/
+
+# Common build output directories
+bin/
+out/
 
 # OS generated files
 .DS_Store
