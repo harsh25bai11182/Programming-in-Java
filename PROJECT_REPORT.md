@@ -21,7 +21,65 @@ The primary objective of this project is to develop a console-driven Java applic
 
 ---
 
-## 3. Core Concepts & Object-Oriented Design
+## 3. Functional Requirements
+
+The system provides the following major functional modules:
+
+1. **Student Record Management**
+   - Add new student records.
+   - Delete student records.
+   - Display all student records.
+
+2. **Student Search & Update**
+   - Search students by Student ID.
+   - Search students by name.
+   - Update personal and academic details.
+   - Add or update subject marks.
+
+3. **Academic Evaluation**
+   - Calculate average percentage.
+   - Calculate the project-defined 10-point CGPA.
+   - Assign a letter grade based on the implemented percentage ranges.
+   - Display academic results.
+
+4. **Input Validation & Sample Data Management**
+   - Validate user input through `InputValidator`.
+   - Prevent invalid mark values and invalid data types.
+   - Load and reset sample student data.
+
+---
+
+## 4. Non-Functional Requirements
+
+The system is designed with the following non-functional requirements:
+
+### 4.1 Usability
+
+- Provides an interactive, menu-driven command-line interface.
+- Uses clear prompts and structured output for common operations.
+- Provides validation messages when user input is invalid.
+
+### 4.2 Reliability
+
+- Validates numeric input and mark ranges before processing.
+- Prevents duplicate Student IDs where required by the application.
+- Uses controlled input handling to reduce unexpected termination during normal invalid-input scenarios.
+
+### 4.3 Maintainability
+
+- Separates responsibilities into `model`, `service`, and `util` packages.
+- Keeps student data models, business logic, input validation, and CLI coordination in separate classes.
+- Uses object-oriented design so individual components can be modified with limited impact on unrelated components.
+
+### 4.4 Resource Efficiency
+
+- Uses in-memory Java collections for the current implementation.
+- Does not require a database or third-party libraries.
+- Performs record and subject operations using standard Java collections.
+
+---
+
+## 5. Core Concepts & Object-Oriented Design
 
 The system demonstrates the following Java and software engineering concepts:
 
